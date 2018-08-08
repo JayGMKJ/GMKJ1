@@ -1,4 +1,25 @@
 <html>
-Jayu
-Godse
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+	const name = "JG";
+	const msg = <h1>Enjoy learning {name}</h1>;
+      ReactDOM.render(
+        msg,
+        document.getElementById('root')
+      );
+
+    </script>
+
+</body>
 </html>
